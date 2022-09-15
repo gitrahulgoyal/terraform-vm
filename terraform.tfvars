@@ -1,0 +1,11 @@
+project_id   = "springpeo-1663214837367"
+region_name  = "us-central1"
+machine_type = "e2-medium"
+zone         = "us-central1-a"
+image        = "debian-cloud/debian-11"
+vpc_name = "goyal-vpc"
+sub_cidr = "10.1.0.0/24"
+sub_name = "goyal-sub"
+disk_name = "mydisk"
+disk_type = "pd-ssd"
+disk_size = 4096
