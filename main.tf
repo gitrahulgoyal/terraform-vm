@@ -10,6 +10,15 @@ resource "google_compute_subnetwork" "terra-sub1" {
   region = var.region_name
 }
 
+resource "google_compute_firewall" "default" {
+  name    = "test-firewall"
+  network = google_compute_network.terravpc.name
+
+  allow {
+    protocol = "tcp"
+    ports    = ["80", "8080"]
+  }
+}
 
 resource "google_compute_instance" "default" {
   name         = var.vm_name
