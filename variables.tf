@@ -1,6 +1,7 @@
 variable "project_id" {}
-variable "region_name" {}
-variable "vm_name" {}
+variable "region_name" {
+  type = list(string)
+}
 variable "machine_type" {}
 variable "zone" {}
 variable "image" {}
